@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Button</title>
+    <style>
+        .nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4%;
+            max-width: 100%;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+
+        .nav-link h2 {
+            font-size: 2.5vw; /* Responsive font size */
+            margin: 0;
+        }
+
+        /* Adjust font size for smaller screens */
+        @media (max-width: 768px) {
+            .nav-link h2 {
+                font-size: 4vw;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .nav-link h2 {
+                font-size: 5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button"
+            onclick="toggleContent(2)">
+        <div class="container">
+            <h2 class="m-0">ՀԱՍԱՐԱԿԱԿԱՆ ՇԻՆՈՒԹՅՈՒՆՆԵՐ</h2>
+        </div>
+    </button>
+</body>
+</html>
